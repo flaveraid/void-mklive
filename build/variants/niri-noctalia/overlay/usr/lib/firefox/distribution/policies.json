@@ -1,0 +1,26 @@
+{
+  "policies": {
+    "ExtensionSettings": {
+      "pywalfox@frewacom.org": {
+        "installation_mode": "normal_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/pywalfox/latest.xpi"
+      }
+    },
+    "OverrideFirstRunPage": "",
+    "OverridePostUpdatePage": "",
+    "DontCheckDefaultBrowser": true,
+    "DisableProfileImport": true,
+    "NoDefaultBookmarks": true,
+    "UserMessaging": {
+      "WhatsNew": false,
+      "ExtensionRecommendations": false,
+      "FeatureRecommendations": false,
+      "UrlbarInterventions": false,
+      "SkipOnboarding": true,
+      "MoreFromMozilla": false
+    },
+    "Homepage": {
+      "StartPage": "homepage"
+    }
+  }
+}

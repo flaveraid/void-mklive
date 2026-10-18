@@ -1,0 +1,7 @@
+# services in this file will be enabled in the chroot environment
+
+dbus
+NetworkManager
+turnstiled
+greetd
+polkitd

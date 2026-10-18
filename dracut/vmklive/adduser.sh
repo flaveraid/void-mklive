@@ -27,6 +27,14 @@ fi
 chroot ${NEWROOT} useradd -m -c $USERNAME -G audio,video,wheel -s $USERSHELL $USERNAME
 chroot ${NEWROOT} passwd -d $USERNAME >/dev/null 2>&1
 
+if [ -d ${NEWROOT}/etc/libvirt ]; then
+    chroot ${NEWROOT} usermod -aG libvirt $USERNAME
+fi
+
+if [ -d ${NEWROOT}/etc/greetd ]; then
+    chroot ${NEWROOT} usermod -aG _greeter $USERNAME
+fi
+
 # Setup default root/user password (voidlinux).
 chroot ${NEWROOT} sh -c 'echo "root:voidlinux" | chpasswd -c SHA512'
 chroot ${NEWROOT} sh -c "echo "$USERNAME:voidlinux" | chpasswd -c SHA512"

@@ -1,0 +1,8 @@
+# services in this file will be enabled in the chroot environment
+
+avahi-daemon
+wsdd-native
+virtlogd
+virtlockd
+libvirtd
+power-profiles-daemon

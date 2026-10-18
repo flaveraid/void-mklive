@@ -1,0 +1,4 @@
+# /var/lib/noctalia-greeter/greeter.toml
+
+[appearance]
+hide_logo = false

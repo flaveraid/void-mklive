@@ -1,0 +1,60 @@
+[bar]
+order = [ "Top" ]
+
+    [bar.Top]
+    capsule = true
+    concave_edge_corners = false
+    end = [
+        "media",
+        "tray",
+        "notifications",
+        "clipboard",
+        "network",
+        "bluetooth",
+        "volume",
+        "brightness",
+        "battery",
+        "session"
+    ]
+    margin_ends = 0
+    margin_opposite_edge = 1
+    radius = 0
+    scale = 1
+    start = [ "launcher", "wallpaper", "workspaces", "taskbar", "active_window" ]
+    thickness = 34
+
+[theme]
+source = "wallpaper"
+
+    [theme.templates]
+    builtin_ids = [ "alacritty", "btop", "foot", "gtk3", "gtk4", "niri", "qt" ]
+    community_ids = [ "pywalfox", "papirus-icons" ]
+
+[wallpaper]
+enabled = true
+transition_on_startup = true
+directory = "/usr/share/backgrounds"
+
+	[wallpaper.default]
+	path = "/usr/share/backgrounds/hiroshi-nagai-city-pop-at-night.png"
+
+	[wallpaper.last]
+	path = "/usr/share/backgrounds/hiroshi-nagai-city-pop-at-night.png"
+
+[hot_corners]
+enabled = true
+
+    [hot_corners.top_left]
+    action = "launcher"
+
+[weather]
+unit = "imperial"
+
+[widget.clock]
+format = "{:%-I:%M %p - %b %-d}"
+
+[widget.media]
+hide_when_no_media = true
+
+[plugins]
+enabled = [ "aristides/udiskie" ]

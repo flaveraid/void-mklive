@@ -1,0 +1,6 @@
+[terminal]
+vt = 7
+
+[default_session]
+command = "env NOCTALIA_GREETER_LOG=/var/lib/noctalia-greeter/greeter.log /usr/sbin/noctalia-greeter-session"
+user = "_greeter"

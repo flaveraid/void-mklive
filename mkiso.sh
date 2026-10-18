@@ -136,6 +136,13 @@ build_variant() {
         base)
             SERVICES="$SERVICES dhcpcd wpa_supplicant acpid"
         ;;
+        niri*)
+            if [ "$variant" == "niri" ]; then
+                echo "Base variant '$variant' is not supported, please use build/build.sh" >&2
+                exit 1
+            fi
+            PKGS="$PKGS $WAYLAND_PKGS"
+        ;;
         enlightenment)
             PKGS="$PKGS $XORG_PKGS lightdm lightdm-gtk-greeter enlightenment terminology udisks2 firefox"
             SERVICES="$SERVICES acpid dhcpcd wpa_supplicant lightdm dbus polkitd"

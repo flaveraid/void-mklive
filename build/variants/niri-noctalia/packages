@@ -1,0 +1,78 @@
+# packages in this file will be installed in the chroot environment
+
+# display environment
+niri
+noctalia
+noctalia-greeter
+adw-gtk-theme
+
+# repos, needed for steam
+void-repo-multilib
+void-repo-multilib-nonfree
+void-repo-nonfree
+
+# service packages
+avahi
+wsdd-native
+power-profiles-daemon
+
+# portals
+xdg-desktop-portal
+xdg-desktop-portal-wlr
+xdg-desktop-portal-gnome
+xdg-desktop-portal-gtk
+
+# fonts / icons / cursors
+liberation-fonts-ttf
+papirus-icon-theme
+xcursor-vanilla-dmz
+
+# shell
+fish-shell
+
+# utilities
+vsv
+git
+nwg-look
+wlr-randr
+btop
+deja-dup
+fastfetch
+fprintd
+udisks2
+xwayland-satellite
+virt-manager
+virt-manager-tools
+qemu
+accountsservice
+upower
+gnome-keyring
+
+# apps
+foot
+geany
+firefox
+alacritty
+nano
+ristretto
+
+# file manager
+Thunar
+gvfs-afc
+gvfs-mtp
+gvfs-smb
+samba-libs
+
+# games
+aisleriot
+
+# steam
+steam
+libgcc-32bit
+libstdc++-32bit
+libdrm-32bit
+libglvnd-32bit
+mesa-dri-32bit
+vulkan-loader
+mesa-vulkan-intel
+mesa-vulkan-intel-32bit

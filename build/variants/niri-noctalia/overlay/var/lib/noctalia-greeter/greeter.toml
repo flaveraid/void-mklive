@@ -1,0 +1,9 @@
+# /var/lib/noctalia-greeter/greeter.toml
+
+[appearance]
+hide_logo = true
+font_family = "Liberation Sans"
+
+[cursor]
+theme = "Vanilla-DMZ"
+size = 24

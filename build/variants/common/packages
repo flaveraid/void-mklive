@@ -1,0 +1,6 @@
+# packages in this file will be installed in the chroot environment
+
+NetworkManager
+greetd
+turnstile
+elogind

@@ -1,0 +1,5 @@
+# repos in this file will be used to install packages in the chroot environment
+
+https://repo-default.voidlinux.org/current/nonfree
+https://repo-default.voidlinux.org/current/multilib
+https://repo-default.voidlinux.org/current/multilib/nonfree

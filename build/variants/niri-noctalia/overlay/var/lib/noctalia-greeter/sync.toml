@@ -1,0 +1,30 @@
+# /var/lib/noctalia-greeter/sync.toml
+
+[appearance]
+font_family = "Liberation Sans"
+scheme = "Synced"
+
+    [appearance.palette]
+    error = "#FFB4AB"
+    hover = "#FFACE7"
+    on_error = "#690005"
+    on_hover = "#541749"
+    on_primary = "#27266F"
+    on_secondary = "#2E2E4A"
+    on_surface = "#E5E1E8"
+    on_surface_variant = "#C8C5D2"
+    on_tertiary = "#541749"
+    outline = "#464650"
+    primary = "#C2C1FF"
+    secondary = "#C5C3E7"
+    shadow = "#000000"
+    surface = "#131318"
+    surface_variant = "#201F24"
+    tertiary = "#FFACE7"
+
+    [appearance.wallpaper]
+    fill_mode = "crop"
+    path = "/usr/share/backgrounds/hiroshi-nagai-city-pop-at-night.png"
+
+[session]
+last = "Niri"

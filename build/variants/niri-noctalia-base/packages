@@ -1,0 +1,12 @@
+# packages in this file will be installed in the chroot environment
+
+# display environment
+niri
+noctalia
+noctalia-greeter
+
+# portals
+xdg-desktop-portal
+xdg-desktop-portal-wlr
+xdg-desktop-portal-gnome
+xdg-desktop-portal-gtk
