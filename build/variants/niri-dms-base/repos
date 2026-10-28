@@ -1,0 +1,4 @@
+# repos in this file will be used to install packages in the chroot environment
+
+https://void.danklinux.com/danklinux/current
+https://void.danklinux.com/dms/current

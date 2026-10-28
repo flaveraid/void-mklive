@@ -1,5 +1,11 @@
 # packages in this file will be installed in the chroot environment
 
+# btrfs
+snapper
+grub-btrfs
+btrfs-assistant
+qt6-wayland-client
+
 # display environment
 niri
 noctalia
@@ -13,7 +19,7 @@ void-repo-nonfree
 
 # service packages
 avahi
-wsdd-native
+#wsdd-native
 power-profiles-daemon
 
 # portals

@@ -19,8 +19,8 @@ chmod 644 "$ROOTFS/etc/greetd/config.toml"
 
 # set default gtk font,cursor,icons globally by rebuilding the schema
 # not needed if your overlay does not include a glib-2.0 schema
-echo "Recompiling glib schemas"
-chroot "$ROOTFS" glib-compile-schemas /usr/share/glib-2.0/schemas
+# echo "Recompiling glib schemas"
+# chroot "$ROOTFS" glib-compile-schemas /usr/share/glib-2.0/schemas
 
 # add fprintd to /etc/pam.d/greetd
 echo "Adding fprintd support"

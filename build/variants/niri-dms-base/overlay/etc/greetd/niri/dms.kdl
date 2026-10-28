@@ -1,0 +1,27 @@
+input {
+    keyboard {
+        xkb
+        numlock
+    }
+    touchpad {
+        tap
+        accel-speed 0.0
+        dwt
+    }
+    mouse {
+        accel-speed 0.0
+    }
+    trackpoint {
+        off
+    }
+}
+
+cursor {
+    xcursor-size 32
+}
+
+output "eDP-1" {
+    mode "1920x1080@60.000"
+    scale 1
+    position x=0 y=0
+}

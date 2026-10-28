@@ -69,6 +69,15 @@ include_installer() {
     fi
 }
 
+include_installer_btrfs() {
+    if [ -x installer_btrfs.sh ]; then
+        install -Dm755 installer_btrfs.sh "$INCLUDEDIR"/usr/bin/void-installer-btrfs
+    else
+        echo installer_btrfs.sh not found >&2
+        exit 1
+    fi
+}
+
 setup_pipewire() {
     PKGS="$PKGS pipewire alsa-pipewire"
     case "$ARCH" in
@@ -203,10 +212,13 @@ EOF
 
     if [ "$WANT_INSTALLER" = yes ]; then
         include_installer
+        include_installer_btrfs
     else
         mkdir -p "$INCLUDEDIR"/usr/bin
         printf "#!/bin/sh\necho 'void-installer is not supported on this live image'\n" > "$INCLUDEDIR"/usr/bin/void-installer
         chmod 755 "$INCLUDEDIR"/usr/bin/void-installer
+        printf "#!/bin/sh\necho 'void-installer-btrfs is not supported on this live image'\n" > "$INCLUDEDIR"/usr/bin/void-installer-btrfs
+        chmod 755 "$INCLUDEDIR"/usr/bin/void-installer-btrfs
     fi
 
     if [ "$variant" != base ]; then

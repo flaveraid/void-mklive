@@ -1,7 +1,7 @@
 # services in this file will be enabled in the chroot environment
 
 avahi-daemon
-wsdd-native
+#wsdd-native
 virtlogd
 virtlockd
 libvirtd

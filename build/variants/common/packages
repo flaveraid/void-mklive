@@ -1,6 +1,10 @@
 # packages in this file will be installed in the chroot environment
 
-NetworkManager
-greetd
 turnstile
+greetd
+NetworkManager
 elogind
+polkit
+tlp
+socklog-void
+nftables

@@ -1,0 +1,15 @@
+# packages in this file will be installed in the chroot environment
+
+# display environment
+mangowc
+noctalia
+noctalia-greeter
+
+# packages
+fish-shell
+
+# portals
+xdg-desktop-portal
+xdg-desktop-portal-wlr
+xdg-desktop-portal-gnome
+xdg-desktop-portal-gtk
