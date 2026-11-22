@@ -1,1 +1,5 @@
 # services in this file will be enabled in the chroot environment
+
+power-profiles-daemon
+cronie
+grub-btrfs

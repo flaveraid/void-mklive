@@ -1,0 +1,159 @@
+[bar]
+order = [ "Top" ]
+
+    [bar.Top]
+    center = [ "group:g3" ]
+    end = [ "media", "tray", "group:g1", "group:g2", "group:g6" ]
+    font_family = "Liberation Sans"
+    margin_ends = 0
+    radius = 0
+    start = [ "group:g4", "workspaces", "active_window" ]
+
+        [[bar.Top.capsule_group]]
+        accordion = false
+        accordion_direction = "start"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g1"
+        members = [ "bluetooth", "widget_2", "network" ]
+        opacity = 1.0
+        padding = 6.0
+
+        [[bar.Top.capsule_group]]
+        accordion = false
+        accordion_direction = "start"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g2"
+        members = [ "volume", "brightness", "battery" ]
+        opacity = 1.0
+        padding = 6.0
+
+        [[bar.Top.capsule_group]]
+        accordion = true
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g3"
+        members = [ "clock" ]
+        opacity = 1.0
+        padding = 6.0
+
+        [[bar.Top.capsule_group]]
+        accordion = true
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g4"
+        members = [ "launcher", "wallpaper", "bar" ]
+        opacity = 1.0
+        padding = 6.0
+
+        [[bar.Top.capsule_group]]
+        accordion = true
+        accordion_direction = "start"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g6"
+        members = [ "session", "power_profile" ]
+        opacity = 1.0
+        padding = 6.0
+
+[brightness]
+minimum_brightness = 0.019999999552965164
+
+[hot_corners]
+delay_ms = 200
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 1200.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = true
+    timeout = 1600.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 1260.0
+
+[location]
+auto_locate = true
+
+[plugins]
+auto_update = "all"
+enabled = []
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/official-plugins"
+    name = "official"
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/community-plugins"
+    name = "community"
+
+[shell]
+polkit_agent = true
+
+    [shell.launcher]
+    app_grid = true
+    sort_by_usage = false
+
+    [shell.screen_corners]
+    enabled = true
+    size = 16
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Oxocarbon"
+source = "wallpaper"
+
+    [theme.templates]
+    builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "mango", "qt" ]
+    community_ids = [ "fastfetch", "papirus-icons", "pywalfox" ]
+
+[wallpaper]
+directory = "/usr/share/backgrounds/void"
+
+    [wallpaper.default]
+    path = "/usr/share/backgrounds/void/void-logo-1920x1080.png"
+
+    [wallpaper.last]
+    path = "/usr/share/backgrounds/void/void-logo-1920x1080.png"
+
+[widget.active_window]
+display = "text_only"
+interactive = false
+
+[widget.clipboard]
+enabled = false
+
+[widget.clock]
+anchor = true
+format = "{:%-I:%M %p} - {:%b %d}"
+
+[widget.control-center]
+enabled = false
+
+[widget.media]
+hide_when_no_media = true
+
+[widget.notifications]
+enabled = false
+
+[widget.workspaces]
+active_pill_size = 1.8
+hide_when_empty = true

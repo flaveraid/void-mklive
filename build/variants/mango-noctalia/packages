@@ -1,12 +1,38 @@
 # packages in this file will be installed in the chroot environment
 
+# btrfs
+snapper
+snapper-rollback
+grub-btrfs
+cronie
+btrfs-assistant
+qt5ct
+qt5-wayland
+qt6ct
+qt6-wayland
+
 # display environment
 mangowc
 noctalia
 noctalia-greeter
 
+# fonts / icons / cursors
+liberation-fonts-ttf
+papirus-icon-theme
+xcursor-vanilla-dmz
+
 # packages
 fish-shell
+vsv
+nano
+alacritty
+fastfetch
+btop
+adw-gtk-theme
+nwg-look
+power-profiles-daemon
+xtools
+wlr-randr
 
 # portals
 xdg-desktop-portal

@@ -1,22 +1,22 @@
 {
-  "wallpaper": "/usr/share/backgrounds/hiroshi-nagai-city-pop-at-night.png",
+  "wallpaper": "/usr/share/backgrounds/void/void-linux-logo-1920x1080.png",
   "alpha": "100",
   "colors": {
-    "color0": "#131318",
+    "color0": "#111412",
     "color1": "",
     "color2": "",
-    "color3": "#c2c1ff",
+    "color3": "#98d4b0",
     "color4": "",
-    "color5": "#fface7",
+    "color5": "#b6c5fb",
     "color6": "",
-    "color7": "#35343a",
+    "color7": "#323633",
     "color8": "",
     "color9": "",
-    "color10": "#c2c1ff",
+    "color10": "#98d4b0",
     "color11": "",
     "color12": "",
-    "color13": "#c5c3e7",
+    "color13": "#b4ccbb",
     "color14": "",
-    "color15": "#e5e1e8"
+    "color15": "#e1e3df"
   }
 }

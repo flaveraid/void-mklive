@@ -1,7 +1,32 @@
 # /var/lib/noctalia-greeter/sync.toml
 
 [appearance]
-scheme = "Noctalia"
+corner_radius_scale = 1.0
+font_family = "Liberation Sans"
+scheme = "Synced"
+theme_mode = "dark"
+
+    [appearance.palette]
+    error = "#FFB4AB"
+    hover = "#B6C5FB"
+    on_error = "#690005"
+    on_hover = "#1E2E5B"
+    on_primary = "#003822"
+    on_secondary = "#203529"
+    on_surface = "#E1E3DF"
+    on_surface_variant = "#C0C9C0"
+    on_tertiary = "#1E2E5B"
+    outline = "#404943"
+    primary = "#98D4B0"
+    secondary = "#B4CCBB"
+    shadow = "#000000"
+    surface = "#111412"
+    surface_variant = "#1D201E"
+    tertiary = "#B6C5FB"
+
+    [appearance.wallpaper]
+    fill_mode = "crop"
+    path = "/var/lib/noctalia-greeter/wallpaper.png"
 
 [session]
 last = "Mango"
