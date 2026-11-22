@@ -5,7 +5,6 @@ NetworkManager
 turnstiled
 greetd
 polkitd
-tlp
 socklog-unix
 nanoklogd
 nftables
