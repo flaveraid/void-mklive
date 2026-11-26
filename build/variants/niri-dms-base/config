@@ -1,0 +1,2 @@
+LIVE_SHELL=/usr/bin/fish
+LIVE_SESSION="/usr/bin/niri --session"

@@ -11,6 +11,7 @@ COMMON_DIR="$VARIANTS_DIR/common"
 VARIANT=
 ARCH=$(xbps-uhelper arch 2>/dev/null || uname -m)
 LIVE_SHELL=
+LIVE_SESSION=
 LAYERS=()        # variant folders to combine, lowest priority first
 EXTRA_ARGS=()    # anything after "--"
 MKLIVE_ARGS=()   # the options we build up and hand to mkiso.sh/mklive.sh
@@ -76,12 +77,27 @@ stage_overlay() {
         fi
     done
 
+    stage_live_session
+
     if [ "$HAVE_OVERLAY" = yes ]; then
         # files in the ISO should be owned by root
         chown -R root:root "$WORK_DIR/overlay"
         MKLIVE_ARGS+=(-I "$WORK_DIR/overlay")
     else
         echo "No overlay found"
+    fi
+}
+
+# write the variant's session command into the overlay, so the
+# 90-live-greetd.sh runit hook can log the live user into it
+stage_live_session() {
+    if [ -n "$LIVE_SESSION" ]; then
+        echo "Live session: $LIVE_SESSION"
+        mkdir -p "$WORK_DIR/overlay/etc/default"
+        printf '%s\n' "$LIVE_SESSION" > "$WORK_DIR/overlay/etc/default/live-session"
+        HAVE_OVERLAY=yes
+    else
+        echo "LIVE_SESSION not set, greetd autologin disabled"
     fi
 }
 
