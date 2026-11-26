@@ -5,6 +5,22 @@ niri
 dms
 dms-greeter
 
+# packages
+fish-shell
+
+# dms
+power-profiles-daemon
+cava
+cups-pk-helper
+kf6-kimageformats
+khal
+fprintd
+adw-gtk-theme
+upower
+dux-calendar
+dux-files
+dux-search
+
 # portals
 xdg-desktop-portal
 xdg-desktop-portal-wlr
