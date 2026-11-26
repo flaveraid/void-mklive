@@ -36,10 +36,10 @@ transition_on_startup = true
 directory = "/usr/share/backgrounds"
 
 	[wallpaper.default]
-	path = "/usr/share/backgrounds/hiroshi-nagai-city-pop-at-night.png"
+	path = "/usr/share/backgrounds/void/void-logo-1920x1080.png"
 
 	[wallpaper.last]
-	path = "/usr/share/backgrounds/hiroshi-nagai-city-pop-at-night.png"
+	path = "/usr/share/backgrounds/void/void-logo-1920x1080.png"
 
 [hot_corners]
 enabled = true
