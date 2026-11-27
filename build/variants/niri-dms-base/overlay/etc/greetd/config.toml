@@ -2,5 +2,5 @@
 vt = 7
 
 [default_session]
-command = "env LIBSEAT_BACKEND=logind DMS_VOID=1 /usr/bin/dms-greeter --command niri --cache-dir /var/cache/dms-greeter -C /etc/greetd/niri/config.kdl"
+command = "env LIBSEAT_BACKEND=logind /usr/bin/dms-greeter --command niri --cache-dir /var/cache/dms-greeter -C /etc/greetd/niri/config.kdl"
 user = "_greeter"
